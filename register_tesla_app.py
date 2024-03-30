@@ -3,7 +3,7 @@ import json
 import os
 
 # Set your domain with the path
-app_domain = "algology.github.io/tezla"
+app_domain = "main--moonlit-muffin-6458e8.netlify.app"
 
 # Retrieve the Tesla API token from environment variables
 tesla_api_token = os.getenv('TESLA_API_TOKEN')
