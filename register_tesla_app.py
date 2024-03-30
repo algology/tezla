@@ -2,20 +2,15 @@ import http.client
 import json
 import os
 
-# Set your domain
-app_domain = 'raw.githubusercontent.com/algology/tezla/main/docs/'  # This might not be acceptable to Tesla
-
-
-# Optionally, your CSR string if you have one
-public_key_csr = ''  # Leave empty if not applicable
+# Set your domain with the path
+app_domain = "algology.github.io/tezla"
 
 # Retrieve the Tesla API token from environment variables
 tesla_api_token = os.getenv('TESLA_API_TOKEN')
 
 conn = http.client.HTTPSConnection("fleet-api.prd.na.vn.cloud.tesla.com")
 payload = json.dumps({
-    "domain": app_domain,
-    "csr": public_key_csr
+    "domain": app_domain
 })
 headers = {
     'Content-Type': 'application/json',
