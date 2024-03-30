@@ -3,7 +3,8 @@ import json
 import os
 
 # Set your domain
-app_domain = 'raw.githubusercontent.com/algology/tezla'  # This might not be acceptable to Tesla
+app_domain = 'raw.githubusercontent.com/algology/tezla/main/docs/'  # This might not be acceptable to Tesla
+
 
 # Optionally, your CSR string if you have one
 public_key_csr = ''  # Leave empty if not applicable
